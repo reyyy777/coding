@@ -1,0 +1,260 @@
+/* Reset dan Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+     background-image: url('https://cdn.prod.website-files.com/6100d0111a4ed76bc1b9fd54/6354105392e43ef1b7191766_html%201.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 200px;
+    text-align: center;
+    position: relative;
+    
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Navigation Styles */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem 0;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+
+}
+
+nav h1 {
+    display: flex;
+    justify-content: center;
+    color: #eee;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul {
+    list-style: h;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav li {
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav.transparent {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+nav.solid {
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover {
+    color: #4da6ff;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #eee;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+  
+  
+}
+
+section h2 {
+    color: #0066cc;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+}
+
+article h3 {
+    margin: 1rem 0;
+    color: #333;
+}
+
+.kelas-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.kelas-list li {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    flex: 1 1 calc(33.333% - 1rem);
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    
+}
+
+.kelas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.kelas-item {
+    background-color: #e6f0ff;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0066cc;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kelas-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    background-color: #cce0ff;
+}
+
+/* Aside Styles */
+aside {
+    background-color: #e6f2ff;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+aside h2 {
+    color: #0066cc;
+    margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+.maps-container {
+  margin: 1rem 0 2rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.kontak-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.kontak-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s;
+}
+
+.kontak-list li a:hover {
+  color: #4da6ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+}
